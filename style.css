@@ -21,15 +21,31 @@ body{
     background-color: transparent;
     backdrop-filter: blur(20px);
     border: 2px solid #898989;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 30px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container .form .logo{
-    width: 300px;
+h1{
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
 }
 
-.container .form
+.container .form .logo{
+    transform: translateY(-60px);
+    width: 150px;
+}
+
+.container .form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
