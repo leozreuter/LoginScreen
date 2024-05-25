@@ -15,7 +15,29 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    background-color: #ffffffad;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    align-items: center;
     justify-content: center;
+    gap:20px;
+    & h6{
+        font-size: 13px;
+        font-weight: 500;
+        font-family: "Jost", sans-serif;
+        font-optical-sizing: auto;
+        & a{
+            color: #000000;
+            text-decoration-line: none;
+        }
+    }
 }
 
 .container{
@@ -29,17 +51,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(30%);
 }
 
 h1{
     font-size: 40px;
-    font-weight: 800;
-    font-style: normal;
-    color: #fff;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    color: #6b6b6b;
 }
 
 .container .form .logo{
-    transform: translateY(-40px);
+    transform: translateY(-50px);
     width: 150px;
 }
 
@@ -115,4 +139,11 @@ button{
     width: 100px;
     height: 25px;
     text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(196, 196, 196);
 }
